@@ -37,6 +37,12 @@ Braze Connected content will be able to get these recommendations via a recommen
 
 In the following table, choose an **AWS Region** and select **Launch Stack**.  This list does not represent all the possible regions where you can deploy the project, only the ones that are currently configured for deployment with the Retail Demo Store.
 
+| **Region** | **Launch** |
+| --- | --- |
+| US East (N. Virginia) | [![][2]](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.amazonaws.com/retaildemostore-us-east-1/cloudformation-templates/template.yaml&amp;stackName=RetailDemoStore&amp;param_ResourceBucket=retaildemostore-us-east-1&amp;param_SourceDeploymentType=CodeCommit&amp;param_PreIndexElasticsearch=Yes) |
+| US West (Oregon) | [![][2]](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?templateURL=https://s3-us-west-2.amazonaws.com/retaildemostore-us-west-2/cloudformation-templates/template.yaml&amp;stackName=RetailDemoStore&amp;param_ResourceBucket=retaildemostore-us-west-2&amp;param_SourceDeploymentType=CodeCommit&amp;param_PreIndexElasticsearch=Yes) |
+| Europe (Ireland) | [![][2]](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?templateURL=https://s3-eu-west-1.amazonaws.com/retaildemostore-eu-west-1/cloudformation-templates/template.yaml&amp;stackName=RetailDemoStore&amp;param_ResourceBucket=retaildemostore-eu-west-1&amp;param_SourceDeploymentType=CodeCommit&amp;param_PreIndexElasticsearch=Yes) |
+
 Accept all the default parameter values for the template.  The deployment of all the project resources should take 25-30 minutes.
 
 ## Step 2:  Build Amazon Personalize Campaigns
@@ -68,3 +74,4 @@ Similar to the Personalization workshop in Step 2, there is a Braze messaging wo
 To avoid incurring future charges, delete the AWS resources the Retail Demo Store project created by deleting the AWS CloudFormation stack you created in Step 1.
 
 [1]: {% image_buster /assets/img/amazon_personalize/braze-personalize-arch.png %}
+[2]: {% image_buster /assets/img/amazon_personalize/launch-stack-button.png %}
